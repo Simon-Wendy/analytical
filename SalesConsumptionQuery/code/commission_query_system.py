@@ -11,7 +11,7 @@ Flask 单页 Web 应用，连接本地 MySQL 数据库(rzq)，
   3. 提成明细区域（分页表格 + 排序）
 
 启动方式:
-  C:/Users/Simon/.workbuddy/binaries/python/envs/default/Scripts/python.exe D:/WorkBuddyAI/Document/commission_query_system.py
+  python commission_query_system.py
 访问:
   http://127.0.0.1:5000
 """
@@ -30,9 +30,9 @@ from flask import Flask, request, jsonify, Response
 DB_CONFIG: Dict[str, Any] = {
     "host": "127.0.0.1",
     "port": 3306,
-    "user": "root",
-    "password": "simon",
-    "database": "rzq",
+    "user": "****",
+    "password": "******",
+    "database": "***",
     "charset": "utf8mb4",
     "cursorclass": pymysql.cursors.DictCursor,
 }
